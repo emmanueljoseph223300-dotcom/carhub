@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarHub - Find Your Perfect Car</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <h1>CarHub</h1>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <nav>
+    <a href="#hero">Home</a>
+    <a href="#cars">Cars</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<section id="hero" class="hero">
+    <h2>Find Your Dream Car</h2>
+    <p>Browse our collection of top‑quality new and used vehicles.</p>
+    <a href="#cars"><button>Explore Cars</button></a>
+</section>
+
+<section class="car-grid" id="cars">
+    <div class="car-card">
+    <img src="https://i.postimg.cc/BQhxqjV4/grok-image-dtsx6e.jpg" alt="Car 1" />
+    <h3>Toyota Camry</h3>
+    <p>₦5,200,000 • 2018 Model</p>
+    <a href="car-toyota-camry.html"><button>View Details</button></a>
+    </div>
+
+    <div class="car-card">
+    <img src="https://i.postimg.cc/1R0z0b0h/grok-image-uojdnt.jpg" alt="Car 2" />
+    <h3>Honda Accord</h3>
+    <p>₦6,000,000 • 2019 Model</p>
+    <button>View Details</button>
+    </div>
+
+    <div class="car-card">
+    <img src="https://i.postimg.cc/FHwZbfmy/grok-image-xbvi57.jpg" alt="Car 3" />
+    <h3>Mercedes C300</h3>
+    <p>₦15,500,000 • 2020 Model</p>
+    <button>View Details</button>
+    </div>
+
+    <div class="car-card">
+    <img src="https://i.postimg.cc/Nj86XdJc/grok-image-xlbot91.jpg" alt="Car 3" />
+    <h3>Mercedes C400</h3>
+    <p>₦19,500,000 • 2021 Model</p>
+    <button>View Details</button>
+    </div>
+
+    <div class="car-card">
+    <img src="https://i.postimg.cc/x8RkCZjX/grok-image-7gl547.jpg" alt="Car 3" />
+    <h3>Lambogini f3</h3>
+    <p>₦20,500,000 • 2023 Model</p>
+    <button>View Details</button>
+    </div>
+</section>
+
+
+<section id="about" class="about">
+<h2>About Us</h2>
+<p>At CarHub, we provide top-quality cars sourced from trusted dealers. We ensure fast delivery, secure payment systems, and complete transparency. Our mission is to make car buying simple, safe, and enjoyable for everyone.</p>
+<ul>
+<li><i class="fa-solid fa-car"></i> High-quality inspected vehicles</li>
+<li><i class="fa-solid fa-truck-fast"></i> Fast and reliable delivery nationwide</li>
+<li><i class="fa-solid fa-shield-halved"></i> Secure and flexible payment options</li>
+</ul>
+</section>
+
+
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<form class="contact-form">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+
+<p><i class="fa-solid fa-envelope"></i> support@carhub.com</p>
+<p><i class="fa-solid fa-phone"></i> +234 810 000 1234</p>
+
+
+<div class="socials">
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+</section>
+
+
+<footer>
+<p>© 2025 CarHub. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+<script>
+    const menuIcon = document.getElementById("menu-icon");
+    const navMenu = document.querySelector("header nav");
+
+    menuIcon.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+</script>
+
+</html>
